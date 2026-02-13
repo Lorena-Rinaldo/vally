@@ -5,30 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vally</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body>
-    <header>
-        <div>
-            <img src="" alt="Logo">
+<body class="font-sans min-h-screen">
+    <!-- (header>(div>img)+(nav>(button)*3)+(div>(button)*2))+main+footer -->
+    <header class="flex justify-between h-20 w-full bg-green-500">
+        <div class="flex justify-center items-center">
+            <h1 class="ml-16">Vally</h1>
         </div>
-        <nav class="hidden md:block">
-            <button>Para Você</button>
-            <button>Recursos</button>
-            <button>Sobre</button>
-        </nav>
-        <div>
-            <button>Logar</button>
-            <button>Cadastrar</button>
+        <div class="flex justify-center items-center">
+            <button class="bg-gray-500 m-4 p-3 w-24 rounded-lg">Logar</button>
+            <button class="bg-gray-500 m-4 p-3 w-24 rounded-lg">Cadastrar</button>
         </div>
     </header>
     <main>
-
+        <section class="calculos">
+            <div>
+                <div>
+                    <h2>Total:</h2>
+                </div>
+                <div>
+                    <h2>
+                        Soma:
+                    </h2>
+                </div>
+                <div>
+                    <h2>
+                        Média:
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="container_contas">
+            <div class="suas_contas">
+                <div>
+                    <h2>Suas Contas</h2>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div>
+                    <h1>ícone de funil</h1>
+                </div>
+            </div>
+            <div class="cards">
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <button
+            class="add_conta bg-green-500 rounded-full group fixed bottom-0 right-0 p-8 m-4 flex items-center justify-center w-16 h-16">
+            <a class="flex justify-center items-center" href="./add_conta.html">+</a>
+        </button>
     </main>
     <footer>
 
     </footer>
-
 </body>
 
 </html>
